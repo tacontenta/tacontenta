@@ -40,3 +40,5 @@ var gmail = document.querySelector('#login-gmail');
 
 facebook.addEventListener('click', ingresarFacebook);
 gmail.addEventListener('click', ingresarGoogle);
+
+/*Termina LogIng+/

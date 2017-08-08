@@ -1,11 +1,5 @@
 
-.index{
-	background: orange;
-}
-.logo-index{
-	width: 50vw;
-	height: 50vh;
-}
+
 .logo{
 	text-align: center;
 	position: relative;
@@ -18,23 +12,23 @@
 	margin-bottom: 3rem;
 }
 #login{
-	background-color: #EBF2FA;
-
+	background-color: orange;
+}
 #sign-up{
-    width: 100%;
-    height: 100vh;
-    background-color: orange;
-    color: antiquewhite;
+	width: 100%;
+	height: 100vh;
+	background-color: orange;
+	color: antiquewhite;
 }
 
-.btn, .btn-large {
-    background-color: antiquewhite;
-    color: chocolate;
-}
+/*.btn, .btn-large {
+	background-color: antiquewhite;
+	color: chocolate;
+}*/
 
 #logo-taco{
-    width: 100%;
-    margin-top: 30%;
-    margin-bottom: 20%;
+	width: 100%;
+	margin-top: 30%;
+	margin-bottom: 20%;
 
 }
