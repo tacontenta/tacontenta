@@ -1,0 +1,17 @@
+#sign-up{
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+    color: antiquewhite;
+}
+
+.btn, .btn-large {
+    background-color: antiquewhite;
+    color: chocolate;
+}
+
+#logo-taco{
+    width: 100%;
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
