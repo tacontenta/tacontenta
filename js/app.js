@@ -19,6 +19,8 @@ function login(provider){
 		console.log('user',user);
 
 		console.log(+localStorage.getItem("email"))
+	}).then(function(result){
+		location.href = "signup.html"
 	}).catch(function(error) {
 		var errorMessage = error.message;
 		console.log('error',errorMessage)
