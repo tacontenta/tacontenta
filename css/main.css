@@ -12,7 +12,9 @@
 	margin-bottom: 3rem;
 }
 #login{
+
 	background-color: orange;
+
 }
 #sign-up{
 	width: 100%;
@@ -31,4 +33,16 @@
 	margin-top: 30%;
 	margin-bottom: 20%;
 
+}
+
+.logoIndex{
+  width: 100%;
+  height: 100vh;
+  background-color: orange;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+.logoPrincipal{
+  margin-top: 45vh;
 }
