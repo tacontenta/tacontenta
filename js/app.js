@@ -9,20 +9,16 @@ var config = {
 };
 firebase.initializeApp(config);
 
-
-
 function login(provider){
 	firebase.auth().signInWithPopup(provider).then(function(result) {
 
 		var token = result.credential.accessToken;
 		var user = result.user;
-		document.getElementById('username').textContent=user.displayName;
-		console.log('user',user);
 		localStorage.setItem("email", user.email);
 		localStorage.setItem("name", user.displayName);
+		console.log('user',user);
 
-		redireccionar();
-
+		console.log(+localStorage.getItem("email"))
 	}).catch(function(error) {
 		var errorMessage = error.message;
 		console.log('error',errorMessage)
@@ -31,17 +27,13 @@ function login(provider){
 
 function ingresarFacebook (){
 	var provider = new firebase.auth.FacebookAuthProvider();
-	login(provider)
-	redireccionar();
+	login(provider);
 };
 function ingresarGoogle (){
 	var provider = new firebase.auth.GoogleAuthProvider();
 	login(provider);
-	redireccionar();
 }
-function redireccionar (){
-	location.href = "signup.html"
-}
+
 var facebook = document.querySelector("#login-facebook");
 var gmail = document.querySelector('#login-gmail');
 
@@ -49,7 +41,3 @@ facebook.addEventListener('click', ingresarFacebook);
 gmail.addEventListener('click', ingresarGoogle);
 
 /*Termina LogIng*/
-/*Inicia sign up*/
-
-
-$("#nombre").val(localStorage.getItem("name"));
