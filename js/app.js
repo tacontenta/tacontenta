@@ -14,12 +14,11 @@ function login(provider){
 
 		var token = result.credential.accessToken;
 		var user = result.user;
-		document.getElementById('username').textContent=user.displayName;
 		localStorage.setItem("email", user.email);
 		localStorage.setItem("name", user.displayName);
 		console.log('user',user);
 
-		console.log(localStorage.getItem("email"))
+		console.log(+localStorage.getItem("email"))
 	}).catch(function(error) {
 		var errorMessage = error.message;
 		console.log('error',errorMessage)
@@ -28,7 +27,7 @@ function login(provider){
 
 function ingresarFacebook (){
 	var provider = new firebase.auth.FacebookAuthProvider();
-	login(provider)
+	login(provider);
 };
 function ingresarGoogle (){
 	var provider = new firebase.auth.GoogleAuthProvider();
@@ -41,4 +40,4 @@ var gmail = document.querySelector('#login-gmail');
 facebook.addEventListener('click', ingresarFacebook);
 gmail.addEventListener('click', ingresarGoogle);
 
-/*Termina LogIng+/
+/*Termina LogIng*/
